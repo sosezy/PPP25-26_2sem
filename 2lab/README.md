@@ -52,52 +52,14 @@ zip_polygons;
 
 В проекте активно используются функции высшего порядка map, filter, reduce, модули itertools и functools, генераторы, итераторы, ленивые вычисления и композиция функций. Архитектура проекта является расширяемой и позволяет добавлять новые генераторы, фильтры и трансформации без изменения существующего кода.
 
-## Запуск из терминала
-
-Сначала установите зависимость:
+## Установка зависимостей
 
 ```bash
 python -m pip install matplotlib
 ```
-
-Показать список сценариев:
-
-```bash
-python main.py list --verbose
-```
-
-Открыть окно с рисунком:
+## Запуск
 
 ```bash
-python main.py show parallel_bands
+python main.py
 ```
 
-Открыть окно и одновременно сохранить PNG:
-
-```bash
-python main.py show crossed_bands --save artifacts/crossed_bands.png
-```
-
-Сохранить без открытия окна:
-
-```bash
-python main.py save symmetric_triangles artifacts/symmetric_triangles.png
-```
-
-Выгрузить все готовые сценарии:
-
-```bash
-python main.py export-all --dir artifacts
-```
-
-## Альтернативный запуск
-
-```bash
-python demo.py
-```
-
-Для запуска без открытия окон `matplotlib`:
-
-```bash
-python demo.py --no-show
-```
